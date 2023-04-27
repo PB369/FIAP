@@ -27,3 +27,4 @@ print(f"Notas de 20: {nota_20}")
 print(f"Notas de 10: {nota_10}")
 print(f"Notas de 5: {nota_5}")
 print(f"Moedas de 1: {moeda_1}")
+
