@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <link rel="stylesheet" href="formularios.css">
+</head>
+<body>
+    <h1>Formulários</h1>
+    <!-- 
+        Method GET captura informações de acordo com os dados do formulário.
+        
+        Method POST envia os dados do formulário para um determinado local.
+    -->
+    <form action="cadastro" name="cadastro" method="get">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+                <label for="campo-nome">Nome: </label>
+                <input type="text" name="nome" id="campo-nome">
+                <label for="campo-email">Email: </label>
+                <input type="email" name="email" id="campo-email">
+                <label for="campo-senha">Senha: </label>
+                <input type="password" name="senha" id="campo-senha">
+            </fieldset>
+            <fieldset>
+                <legend>Outros</legend>
+                <label for="campo-busca">Buscar: </label>
+                <input type="search" name="busca" id="campo-busca">
+                
+                <label for="campo-site">Site: </label>
+                <input type="url" name="site" id="campo-site">
+                
+                <label for="campo-data">Data: </label>
+                <input type="date" name="data" id="campo-data">
+                
+                <label for="campo-hora">Horário: </label>
+                <input type="time" name="horario" id="campo-hora"><br>
+                
+                <label for="campo-reuniao">Reunião:</label>
+                <input type="datetime-local" name="reuniao" id="campo-reuniao">
+                
+                <label for="campo-mes">Mês: </label>
+                <input type="month" name="mes" id="campo-mes">
+
+                <label for="campo-valor">Valor: </label>
+                <input type="number" name="valor" id="campo-valor" min="0" max="50" step="5">
+                <br>
+
+                <label for="campo-quantidade">Quantidade: </label>
+                <input type="range" name="quantidade" id="campo-quantidade" min="0" max="50" step="5">
+            </fieldset>
+            <fieldset>
+                <legend>Tamanho</legend>
+                <input type="radio" name="tamanho" id="campo-pequeno" value="P">
+                <label for="campo-pequeno">Pequeno</label>
+                <br>
+
+                <input type="radio" name="tamanho" id="campo-medio" value="M">
+                <label for="campo-medio">Médio</label>
+                <br>
+
+                <input type="radio" name="tamanho" id="campo-grande" value="G">
+                <label for="campo-grande">Grande</label>
+            </fieldset>
+        <input type="submit" value="Cadastrar" id="botao">
+    </form>
+</body>
+</html>
