@@ -1,11 +1,5 @@
 import random
 
-vinho1 = "Vinho Tinto"
-vinho2 = "Vinho Branco"
-vinho3 = "Vinho Rosé"
-vinho4 = "Espumante"
-vinho5 = "Vinho Licoroso"
-
 vinho1_subtotal = vinho2_subtotal = vinho3_subtotal = vinho4_subtotal = vinho5_subtotal = 0
 
 continuar = "sim"
@@ -13,6 +7,7 @@ valor_compra = 0
 preco_vinho = 0
 tipo_vinho = 0
 frete = 35
+itens_compra_mesagem = "\nItens da Compra:\n"
 
 
 # Determinando qual será o atendente:
@@ -61,25 +56,25 @@ else:
                 else:
 
                     if tipo_vinho == 1:
-                        vinho1 = True
                         preco_vinho = 75
                         vinho1_subtotal += (preco_vinho * quantidade)
+                        itens_compra_mesagem += f"Vinho Tinto | R$75,00\n Subtotal do Produto: R${vinho1_subtotal:.2f}\n"
                     elif tipo_vinho == 2:
-                        vinho2 = True
                         preco_vinho = 105
                         vinho2_subtotal += (preco_vinho * quantidade)
+                        itens_compra_mesagem += f"Vinho Branco | R$105,00\n Subtotal do Produto: R${vinho2_subtotal:.2f}\n"
                     elif tipo_vinho == 3:
-                        vinho3 = True
                         preco_vinho = 140
                         vinho3_subtotal += (preco_vinho * quantidade)
+                        itens_compra_mesagem += f"Vinho Rosé | R$140,00\n Subtotal do Produto: R${vinho3_subtotal:.2f}\n"
                     elif tipo_vinho == 4:
-                        vinho4 = True
                         preco_vinho = 350
                         vinho4_subtotal += (preco_vinho * quantidade)
+                        itens_compra_mesagem += f"Vinho Espumante | R$350,00\n Subtotal do Produto: R${vinho4_subtotal:.2f}\n"
                     elif tipo_vinho == 5:
-                        vinho5 = True
                         preco_vinho = 410
                         vinho5_subtotal += (preco_vinho * quantidade)
+                        itens_compra_mesagem += f"Vinho Licoroso | R$410,00\n Subtotal do Produto: R${vinho5_subtotal:.2f}\n"
                     continuar = input("\nVocê deseja continuar comprando? Se você quer cancelar a compra, digite 0.\n").lower().strip()
                     # Verificando se o cliente quer cancelar a compra no momento do continuar:
                     if continuar == "0":
@@ -113,31 +108,8 @@ else:
         print(f"Nome do Atendente: {atendente}")
         print(f"Nome do Cliente: {cliente}")
 
-        #
-        print("\nItens da Compra:")
-        if vinho1 == True:
-            vinho1 = "Vinho Tinto"
-            print(f"{vinho1} | R$75,00")
-            print(f" Subtotal do Produto: R${vinho1_subtotal:.2f}")
-        if vinho2 == True:
-            vinho2 = "Vinho Branco"
-            print(f"{vinho2} | R$105,00")
-            print(f" Subtotal do Produto: R${vinho2_subtotal:.2f}")
-        if vinho3 == True:
-            vinho3 = "Vinho Rosé"
-            print(f"{vinho3} | R$140,00")
-            print(f" Subtotal do Produto: R${vinho3_subtotal:.2f}")
-        if vinho4 == True:
-            vinho4 = "Espumante"
-            print(f"{vinho4} | R$350,00")
-            print(f" Subtotal do Produto: R${vinho4_subtotal:.2f}")
-        if vinho5 == True:
-            vinho5 ="Vinho Licoroso"
-            print(f"{vinho5} | R$410,00")
-            print(f" Subtotal do Produto: R${vinho5_subtotal:.2f}")
-
-        print(f"\nSubtotal da Compra: R${valor_compra:.2f}")
-
+        print(itens_compra_mesagem)
+        print(f"Subtotal da Compra: R${valor_compra:.2f}")
 
         if frete == 0:
             print("Valor do Frete: GRÁTIS")
