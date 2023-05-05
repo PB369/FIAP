@@ -37,12 +37,12 @@ else:
     # Exibindo as opções de compra:
     print("\nMuito bem. Tendo essas informações, agora eu vou lhe mostrar as opções da casa. Veja abaixo a lista de vinhos que possuímos:")
     print("""
-    [0] - Cancelar Compra
-    [1] - Vinho Tinto\t | R$75,00 
-    [2] - Vinho Branco\t | R$105,00
-    [3] - Vinho Rosé\t | R$140,00
-    [4] - Espumante\t | R$350,00
-    [5] - Vinho Licoros\t | R$410,00
+[0] - Cancelar Compra
+[1] - Vinho Tinto\t | R$75,00 
+[2] - Vinho Branco\t | R$105,00
+[3] - Vinho Rosé\t | R$140,00
+[4] - Espumante\t | R$350,00
+[5] - Vinho Licoros\t | R$410,00
     """)
     # Criando um loop para permitir a adição de mais itens da compra no carrinho:
     while (continuar.lower().strip() != "não" and continuar != "0") or tipo_vinho > 0:
@@ -58,23 +58,23 @@ else:
                     if tipo_vinho == 1:
                         preco_vinho = 75
                         vinho1_subtotal += (preco_vinho * quantidade)
-                        itens_compra_mesagem += f"Vinho Tinto | R$75,00\n Subtotal do Produto: R${vinho1_subtotal:.2f}\n"
+                        itens_compra_mesagem += f"Vinho Tinto | R$75,00\n Quantidade: {quantidade}\n Subtotal do Produto: R${vinho1_subtotal:.2f}\n"
                     elif tipo_vinho == 2:
                         preco_vinho = 105
                         vinho2_subtotal += (preco_vinho * quantidade)
-                        itens_compra_mesagem += f"Vinho Branco | R$105,00\n Subtotal do Produto: R${vinho2_subtotal:.2f}\n"
+                        itens_compra_mesagem += f"Vinho Branco | R$105,00\n Quantidade: {quantidade}\n Subtotal do Produto: R${vinho2_subtotal:.2f}\n"
                     elif tipo_vinho == 3:
                         preco_vinho = 140
                         vinho3_subtotal += (preco_vinho * quantidade)
-                        itens_compra_mesagem += f"Vinho Rosé | R$140,00\n Subtotal do Produto: R${vinho3_subtotal:.2f}\n"
+                        itens_compra_mesagem += f"Vinho Rosé | R$140,00\n Quantidade: {quantidade}\n Subtotal do Produto: R${vinho3_subtotal:.2f}\n"
                     elif tipo_vinho == 4:
                         preco_vinho = 350
                         vinho4_subtotal += (preco_vinho * quantidade)
-                        itens_compra_mesagem += f"Vinho Espumante | R$350,00\n Subtotal do Produto: R${vinho4_subtotal:.2f}\n"
+                        itens_compra_mesagem += f"Vinho Espumante | R$350,00\n Quantidade: {quantidade}\n Subtotal do Produto: R${vinho4_subtotal:.2f}\n"
                     elif tipo_vinho == 5:
                         preco_vinho = 410
                         vinho5_subtotal += (preco_vinho * quantidade)
-                        itens_compra_mesagem += f"Vinho Licoroso | R$410,00\n Subtotal do Produto: R${vinho5_subtotal:.2f}\n"
+                        itens_compra_mesagem += f"Vinho Licoroso | R$410,00\n Quantidade: {quantidade}\n Subtotal do Produto: R${vinho5_subtotal:.2f}\n"
                     continuar = input("\nVocê deseja continuar comprando? Se você quer cancelar a compra, digite 0.\n").lower().strip()
                     # Verificando se o cliente quer cancelar a compra no momento do continuar:
                     if continuar == "0":
