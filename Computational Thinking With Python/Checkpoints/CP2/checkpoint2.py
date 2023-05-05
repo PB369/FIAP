@@ -41,7 +41,7 @@ else:
 [1] - Vinho Tinto\t | R$75,00 
 [2] - Vinho Branco\t | R$105,00
 [3] - Vinho Rosé\t | R$140,00
-[4] - Espumante\t | R$350,00
+[4] - Espumante\t\t | R$350,00
 [5] - Vinho Licoros\t | R$410,00
     """)
     # Criando um loop para permitir a adição de mais itens da compra no carrinho:
