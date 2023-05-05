@@ -80,14 +80,14 @@ else:
                         vinho5 = True
                         preco_vinho = 410
                         vinho5_subtotal += (preco_vinho * quantidade)
-                    continuar = input("\nVocê deseja continuar comprando? Se você quer cancelar a compra, digite 0.\n")
+                    continuar = input("\nVocê deseja continuar comprando? Se você quer cancelar a compra, digite 0.\n").lower().strip()
                     # Verificando se o cliente quer cancelar a compra no momento do continuar:
                     if continuar == "0":
                         print("Muito bem, sua compra foi cancelada. Volte quando quiser!")
                     # Verifiando a validade da resposta do continuar:
                     elif continuar != "sim" and continuar != "não" and continuar != 0:
-                        print("Desculpe, mas não entendi a sua resposta.")
-                        continuar = input("\nVocê deseja continuar comprando? Se você quer cancelar a compra, digite 0.\n")
+                        print("Desculpe, não entendi a sua resposta.")
+                        continuar = input("\nVocê deseja continuar comprando? Se você quer cancelar a compra, digite 0.\n").lower().strip()
                     tipo_vinho = 0
 
             # Permitindo ao cliente cancelar a sua compra:
@@ -142,6 +142,6 @@ else:
         if frete == 0:
             print("Valor do Frete: GRÁTIS")
         else:
-            print(f"Valor do Frete: {frete:.2f}")
+            print(f"Valor do Frete: R${frete:.2f}")
 
         print(f"\nTotal a Pagar: R${total:.2f}")
