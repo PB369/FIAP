@@ -43,11 +43,11 @@ else:
     print("\nMuito bem. Tendo essas informações, agora eu vou lhe mostrar as opções da casa. Veja abaixo a lista de vinhos que possuímos:")
     print("""
     [0] - Cancelar Compra
-    [1] - Vinho Tinto | R$75,00 
-    [2] - Vinho Branco | R$105,00
-    [3] - Vinho Rosé | R$140,00
-    [4] - Espumante | R$350,00
-    [5] - Vinho Licoroso | R$410,00
+    [1] - Vinho Tinto\t | R$75,00 
+    [2] - Vinho Branco\t | R$105,00
+    [3] - Vinho Rosé\t | R$140,00
+    [4] - Espumante\t | R$350,00
+    [5] - Vinho Licoros\t | R$410,00
     """)
     # Criando um loop para permitir a adição de mais itens da compra no carrinho:
     while (continuar.lower().strip() != "não" and continuar != "0") or tipo_vinho > 0:
@@ -132,7 +132,7 @@ else:
             print(f"{vinho4} | R$350,00")
             print(f" Subtotal do Produto: R${vinho4_subtotal:.2f}")
         if vinho5 == True:
-            vinho5 = "Vinho Licoroso"
+            vinho5 ="Vinho Licoroso"
             print(f"{vinho5} | R$410,00")
             print(f" Subtotal do Produto: R${vinho5_subtotal:.2f}")
 
