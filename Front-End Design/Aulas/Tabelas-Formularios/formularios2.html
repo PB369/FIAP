@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários 2</title>
+    <link rel="stylesheet" href="formularios.css">
+</head>
+<body>
+    <h1>Formulários</h1>
+    <form action="cadastrar" method="get">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label for="campo-nome">Nome: </label>
+            <input type="text" name="nome" id="campo-nome" required autofocus autocomplete="off" maxlength="8"><br>
+        </fieldset>
+        <fieldset>
+            <legend>Tamanho</legend>
+            <input type="radio" name="tamanho" id="campo-pequeno" value="P">
+            <label for="campo-pequeno">Pequeno</label><br>
+            <input type="radio" name="tamanho" id="campo-medio" value="M">
+            <label for="campo-medio">Médio</label><br>
+            <input type="radio" name="tamanho" id="campo-grande" value="G">
+            <label for="campo-grande">Grande</label><br>
+        </fieldset>
+        <fieldset>
+            <legend>Cores</legend>
+            <input type="checkbox" name="cor" id="campo-azul" value="azul">
+            <label for="campo-azul">Azul</label><br>
+            <input type="checkbox" name="cor" id="campo-verde" value="verde">
+            <label for="campo-verde">Verde</label><br>
+            <input type="checkbox" name="cor" id="campo-vermelho" value="vermelho">
+            <label for="campo-vermelho">Vermelho</label><br>
+        </fieldset>
+        <fieldset>
+            <legend>Observações</legend>
+            <textarea name="obs" id="campo-obs" cols="30" rows="10"></textarea>
+            <label for="campo-uf">Unidade Federativa</label><br>
+            <select name="uf" id="campo-uf">
+                <option value="" disabled selected>Selecionar</option>
+                <optgroup label="Sudeste">
+                    <option value="sp">São Paulo</option>
+                    <option value="rj">Rio de Janeiro</option>
+                    <option value="mg">Minas Gerais</option>
+                    <option value="es">Espírito Santo</option>
+                </optgroup>
+                <optgroup label="Sul">
+                    <option value="rs">Rio Grande do Sul</option>
+                    <option value="sc">Santa Catarina</option>
+                    <option value="pr">Paraná</option>
+                </optgroup>
+            </select>
+        </fieldset>
+        <input type="submit" value="Cadastrar">
+        <input type="reset" value="Limpar Formulário">
+        <input type="button" value="Calcular">
+    </form>
+</body>
+</html>
