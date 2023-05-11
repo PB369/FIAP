@@ -89,3 +89,130 @@ main {
     max-width: 70%;
     margin: 40px auto;
 }
+
+#produtos-em-promocao {
+    background-color: #5DA9E9;
+    margin: auto;
+    text-align: center;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    box-shadow: 0px 0px 2px black;
+}
+
+#produtos-em-promocao h2 {
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 30px;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.opcao-de-produto {
+    box-sizing: border-box;
+    display: inline-block;
+    background-color: rgb(255, 255, 255);
+    margin: 20px 5%;
+    box-shadow: 0px 0px 4px black;
+}
+
+.opcao-de-produto img {
+    max-width: 300px;
+    height: 350px;
+    border-bottom: 1px solid black;
+}
+
+.informacoes-do-produto {
+    padding: 10px;
+}
+
+.informacoes-do-produto p {
+    text-align: left;
+    margin: 5px;
+    font-size: 1.2em;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#preco-original {
+    text-decoration: line-through;
+    color: darkred;
+}
+
+.informacoes-do-produto button {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 1em;
+    transition: 0.2s;
+}
+
+.informacoes-do-produto button:hover {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color:rgb(219, 219, 219);
+    font-size: 1em;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#acessorios-e-roupas {
+    margin: auto;
+    text-align: center;
+}
+
+#acessorios-e-roupas h2 {
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 30px;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.caixa-dos-acessorios-e-roupas {
+    border: 2px solid black;
+    box-shadow: 0px 0px 2px black;
+    margin: 30px 10%;
+    padding-bottom: 18px;
+}
+
+.caixa-dos-acessorios-e-roupas h3 {
+    margin: 20px;
+    font-size: 1.8em;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#servicos {
+    border: 1px solid black;
+    margin: 20px 0;
+}
+
+#servicos h2 {
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 30px;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#servicos article {
+    border: 1px solid black;
+    margin: 20px;
+}
+
+.opcao-de-servico {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 204px 10px;
+    box-sizing: border-box;
+}
+
+.opcao-de-servico img {
+    max-width: 33%;
+    height: 350px;
+}
+
+.opcao-de-servico img, .opcao-de-servico a {
+    position: absolute;
+}
