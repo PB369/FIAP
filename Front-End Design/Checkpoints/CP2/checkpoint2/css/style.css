@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&family=Pacifico&display=swap');
+
+:root {
+    --amarelo: #efb632;
+    --azul: #048BA8;
+}
+
+header {
+    background-color: rgb(255, 255, 255);
+    padding: 15px;
+    text-align: center;
+}
+
+header img {
+    width: 200px;
+}
+
+header h1 {
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+}
+
+nav {
+    background-color: black;
+}
+
+nav ul {
+    padding: 20px 15px;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration:none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 8px;
+    transition: 0.2s;
+    border-radius: 20px;
+}
+
+nav ul li a:hover {
+    color: #000000;
+    background-color: white;
+}
+
+main {
+    background-color: white;
+
+}
+
+#dica-do-dia {
+    background-color: var(--amarelo);
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 25px auto;
+    padding: 15px;
+    max-width: 85%;
+}
+
+#dica-do-dia h2 {
+    font-size: 2.3em;
+    font-family: 'Pacifico', cursive;
+    text-decoration: underline;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+#dica-do-dia p {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 500;
+    line-height: 25px;
+    text-align: justify;
+    text-indent: 15px;
+    margin: 20px;
+}
+
+#dica-do-dia img {
+    border: 1px solid black;
+    box-shadow: 0px 0px 3px black;
+    display: block;
+    max-width: 70%;
+    margin: 40px auto;
+}
