@@ -113,28 +113,37 @@ main {
     background-color: rgb(255, 255, 255);
     margin: 20px 5%;
     box-shadow: 0px 0px 4px black;
+    border-radius: 8px;
+    width: 300px;
 }
 
 .opcao-de-produto img {
-    max-width: 300px;
+    width: 300px;
     height: 350px;
     border-bottom: 1px solid black;
+    border-radius: 8px 8px 0px 0px;
 }
 
 .informacoes-do-produto {
-    padding: 10px;
+    padding: 5px;
 }
 
 .informacoes-do-produto p {
+    color: black;
     text-align: left;
+    max-width: 280px;
     margin: 5px;
     font-size: 1.2em;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 #preco-original {
     text-decoration: line-through;
     color: darkred;
+    margin-top: 10px;
 }
 
 .informacoes-do-produto button {
@@ -147,11 +156,7 @@ main {
 }
 
 .informacoes-do-produto button:hover {
-    margin: 10px;
-    padding: 10px;
-    border-radius: 5px;
     background-color:rgb(219, 219, 219);
-    font-size: 1em;
     cursor: pointer;
     transition: 0.2s;
 }
@@ -164,6 +169,7 @@ main {
 #acessorios-e-roupas h2 {
     text-align: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 15px;
     padding: 30px;
     font-size: 2em;
     font-weight: bold;
@@ -176,6 +182,11 @@ main {
     padding-bottom: 18px;
 }
 
+#cachorros {
+    margin-top: 0;
+    margin-bottom: 60px;
+}
+
 .caixa-dos-acessorios-e-roupas h3 {
     margin: 20px;
     font-size: 1.8em;
@@ -183,8 +194,12 @@ main {
 }
 
 #servicos {
-    border: 1px solid black;
-    margin: 20px 0;
+    margin: 20px 0px 60px 0;
+    padding-bottom: 60px;
+    background-color: #FF6666;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    box-shadow: 0px 0px 2px black;
 }
 
 #servicos h2 {
@@ -193,26 +208,76 @@ main {
     padding: 30px;
     font-size: 2em;
     font-weight: bold;
+    
 }
 
 #servicos article {
-    border: 1px solid black;
-    margin: 20px;
+    margin: 0;
+    margin-bottom: -10px;
+    text-align: center;   
 }
 
 .opcao-de-servico {
+    position: relative;
+    padding: 190px;
+    width: 450px;
+    height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 204px 10px;
+    background-color: #000000;
     box-sizing: border-box;
 }
 
 .opcao-de-servico img {
-    max-width: 33%;
-    height: 350px;
+    position: absolute;
+    width: 450px;
+    height: 500px;
+    top: 0%;
+    left: 0%;
+    margin: 0;
+    transition: 0.2s;
 }
 
-.opcao-de-servico img, .opcao-de-servico a {
+.opcao-de-servico:hover img {
+    opacity: 50%;
+}
+
+.opcao-de-servico:hover a {
+    display: inline;
+}
+
+.opcao-de-servico a:hover {
+    text-decoration: underline;
+}
+
+.opcao-de-servico a {
     position: absolute;
+    text-decoration: none;
+    color: white;
+    display: none;
+    font-size: 1.5em;
+    font-family: 'Noto Sans', sans-serif;
+    transition: 0.2s;
+}
+
+.caixa-opcoes-servicos {
+    display: inline-block;
+    margin: 0 -2px;
+    width: 450px;
+    height: 500px;
+    border: 1px solid black;
+}
+
+footer {
+    background-color:black;
+    padding: 10px;
+}
+
+footer address, p {
+    color: white;
+    text-align: center;
+    margin: 20px;
+    font-size: 0.8em;
+    font-family: 'Noto Sans', sans-serif;
 }
