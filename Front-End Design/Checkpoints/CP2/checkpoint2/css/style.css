@@ -176,6 +176,7 @@ main {
 }
 
 .caixa-dos-acessorios-e-roupas {
+    background-color: rgb(250, 235, 215);
     border: 2px solid black;
     box-shadow: 0px 0px 2px black;
     margin: 30px 10%;
@@ -196,7 +197,7 @@ main {
 #servicos {
     margin: 20px 0px 60px 0;
     padding-bottom: 60px;
-    background-color: #FF6666;
+    background-color: #ff9898;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
     box-shadow: 0px 0px 2px black;
