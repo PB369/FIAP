@@ -14,6 +14,6 @@ try:
     print(f"A soma destes números é {soma}")
 
 except ValueError:
-    print("O valor inserido está inválido")
+    print("O valor inserido é inválido")
 finally:
     print("\nPrograma encerrado.")
