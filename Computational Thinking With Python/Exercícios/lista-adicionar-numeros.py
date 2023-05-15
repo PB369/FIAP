@@ -25,11 +25,13 @@ try:
             if div1 and div2 and div3 and div4 != 0:
                 quantidade_primos += 1
     
+    lista.sort()
+
     print("\nInformações sobre a lista gerada:\n")
     print("Tamanho da lista:", len(lista))
-    print(f"A lista em ordem crescente:", sorted(lista))
+    print(f"A lista em ordem crescente: {lista}")
     print(f"Quantidade de números negativos: {quantidade_negativos}")
-    print(f"Quantidade de números primos positivos: {quantidade_primos}")
+    print(f"Quantidade de números primos: {quantidade_primos}")
 except ValueError:
     print("O campo só pode receber números.")
 finally:
