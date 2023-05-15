@@ -16,6 +16,7 @@ try:
 
         if numero == 2 or numero == 3 or numero == 5 or numero == 7:
             quantidade_primos +=1
+            
         else:
             div1 = numero%2
             div2 = numero%3
