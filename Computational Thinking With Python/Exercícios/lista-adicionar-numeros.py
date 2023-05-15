@@ -25,7 +25,7 @@ try:
 
             if div1 and div2 and div3 and div4 != 0:
                 quantidade_primos += 1
-    
+
     lista.sort()
 
     print("\nInformações sobre a lista gerada:\n")
