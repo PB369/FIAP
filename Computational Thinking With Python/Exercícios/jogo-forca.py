@@ -27,13 +27,14 @@
 #     else:
 #         print("Você errou!")
 
-lista = ["_", "_", "_"]
-indice = 0
-letra = "e"
+lista = ["_", "_", "_", "_", "_"]
 string = "teste"
+indice = 0
 for i in string:
-    indice += 1
+    letra = input("Digite a letra: ")
     if letra == i:
-        lista.remove(indice)
-        lista.append(letra)
+        lista.insert(indice, letra)
+        lista.pop()
+    print(lista)
+    indice += 1
 print(lista)
