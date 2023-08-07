@@ -8,13 +8,13 @@ sorteio_palavra = random.randint(1,3)
 match sorteio_palavra:
     case 1:
         palavra_secreta = "hipócrita"
-        dica = "finge que tem, exige dos outros, mas não faz o que fala"
+        dica = "Finge que tem, exige dos outros, mas não faz o que fala"
     case 2:
         palavra_secreta = "ignorante"
-        dica = "burro, burro, você é burro!"
+        dica = "Burro, burro, você é burro!"
     case 3:
         palavra_secreta = "constante"
-        dica = "permanece firme; não muda"
+        dica = "Permanece firme; não muda"
 
 print(palavra_secreta)
 
@@ -36,6 +36,7 @@ corpo = [perna_esq_corpo, perna_dir_corpo, bra_esq_corpo, bra_dir_corpo, tronco_
 palavra_escondida = ["_", "_", "_", "_", "_", "_", "_", "_", "_"]
 
 print(f"\nTentativas Restantes: {tentativas}\n")
+print(f"Dica: '{dica}'")
 
 while not tentativas == 0:
     letra = input("Digite o seu palpite: \n")
@@ -48,7 +49,8 @@ while not tentativas == 0:
             if letra == i:
                 palavra_escondida[indice] = letra
             indice += 1
-        print(palavra_escondida)
+        for i in palavra_escondida:
+            print(i, end=" ")
     indice = 0
 
     if not ("_" in palavra_escondida) and tentativas > 0:
