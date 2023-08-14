@@ -1,3 +1,6 @@
+# PEDRO HENRIQUE FERNANDES LÔ DE BARROS
+# RM97937
+
 tipo = 0
 comparador = 0
 maior_num = 0

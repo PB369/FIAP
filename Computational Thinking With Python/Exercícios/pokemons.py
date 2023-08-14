@@ -1,3 +1,6 @@
+# PEDRO HENRIQUE FERNANDES LÔ DE BARROS
+# RM97937
+
 pokemons = (["Pichu", "Luxray"], "Elétrico", ["Amaura"], "Pedra", ["Talonflame", "Slugma"], "Fogo", ["Psyduck", "Wimpod"], "Água")
 
 escolha = input("Digite o tipo de Pokemon que você quer pesquisar: ")
