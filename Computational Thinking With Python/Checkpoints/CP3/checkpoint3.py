@@ -76,4 +76,3 @@ while sub_verificacao_ano_nascimento:
         else:
             sub_verificacao_ano_nascimento = False
             continuar()
-            
