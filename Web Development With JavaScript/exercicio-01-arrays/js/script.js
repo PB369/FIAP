@@ -11,22 +11,22 @@ function criarTarefa(novaTarefa){
     tarefa.appendChild(botaoRemover);
     listaTarefasUl.appendChild(tarefa);
 
-    console.log(listaTarefas);
-    botaoRemover.addEventListener("click", removerTarefa);
+    botaoRemover.addEventListener("click", function(event){
+        event.preventDefault();
+        let conteudoTarefa = event.target.parentNode.textContent.split(" ");
+        indiceTarefa = listaTarefas.indexOf(conteudoTarefa[0]);
+        listaTarefas.splice(indiceTarefa, 1);
+        event.target.parentNode.remove();
+        console.log(listaTarefas);
+    });
 };
 
-function removerTarefa(event, conteudoTarefa) {
-    event.preventDefault();
-    event.target.parentNode.remove();
-    indiceTarefa = listaTarefas.indexOf(conteudoTarefa);
-    listaTarefas.splice(indiceTarefa, 1);
-    console.log(listaTarefas);
-};
 
 botaoCriar.addEventListener("click", function(event){
     event.preventDefault();
     let inputTarefa = document.querySelector("#nome-tarefa");
     listaTarefas.push(inputTarefa.value);
     criarTarefa(inputTarefa.value);
+    console.log(listaTarefas);
     inputTarefa.value = "";
 });
