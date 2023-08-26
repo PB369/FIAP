@@ -116,7 +116,7 @@ body p, body address, body button, body a {
 
 /* Edição do Main */
 
-/* Edição do Article */
+/* Edição do Lema */
 
 #lema {
   display: flex;
@@ -424,60 +424,4 @@ body p, body address, body button, body a {
 .logo-midia:hover .quadrado-branco{
   opacity: 1;
   filter: blur(1px);
-}
-
-@media screen and (max-width: 1112px) {
-  #area-logo img {
-    width: 47px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  #menu-header {
-    display: none;
-  }
-
-  #cabecalho #menu-hamburguer {
-    display: inline-block;
-    width: 33px;
-  }
-
-  #rodape {
-    flex-direction: column;
-  }
-
-  #menu-footer ul{
-    flex-direction: row;
-  }
-
-  #menu-footer ul li{
-    margin: 5px;
-  }
-
-  #menu-footer ul li a{
-    font-weight: bold;
-  }
-
-  #info-loja {
-    margin: 10px 0;
-  }
-
-  #midias-sociais .logo-midia {
-    margin-bottom: 0;
-  }
-
-}
-
-@media screen and (max-width: 440px) {
-  #propaganda {
-    max-height: none;
-  }
-
-  #info-propaganda img {
-    margin: 25px 0 10px 0;
-  }
-
-  #menu-footer {
-    display: none;
-  }
 }
