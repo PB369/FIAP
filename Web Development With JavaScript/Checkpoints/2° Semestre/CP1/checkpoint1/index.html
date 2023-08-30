@@ -8,30 +8,29 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <p>RM97937 - Pedro Henrique Fernandes Lô de Barros</p>
   <h1>Preencha o Formulário Abaixo</h1>
-    <form action="">
+    <form action="" id="formulario">
         <label for="nome-tf">Nome da Tarefa: </label>
         <input type="text" id="nome-tf" name="nome-tarefa">
-        <br>
         <label for="descricao-tf">Descrição da Tarefa: </label>
-        <input type="text" id="descricao-tf" name="nome-tarefa">
-        <br>
+        <input type="text" id="descricao-tf" name="descricao">
         <label for="autor-tf">Autor: </label>
-        <input type="text" id="autor-tf" name="nome-tarefa">
-        <br>
+        <input type="text" id="autor-tf" name="autor-tarefa">
         <label for="departamento-tf">Departamento: </label>
-        <input type="text" id="departamento-tf" name="nome-tarefa">
-        <br>
+        <input type="text" id="departamento-tf" name="departamento">
         <label for="importancia-tf">Importância: </label>
-        <input type="text" id="importancia-tf" name="nome-tarefa">
-        <br>
+        <input type="text" id="importancia-tf" name="importancia-tarefa">
         <label for="valor-tf">Valor: </label>
-        <input type="text" id="valor-tf" name="nome-tarefa">
-        <br>
+        <input type="text" id="valor-tf" name="valor-tarefa">
+        <label for="duracao-tf">Duração: </label>
+        <input type="text" id="duracao-tf" name="duracao-tarefa">
+    
         <button id="botaoCriar">Criar</button>
     </form>
+    <button id="ordenar-tarefas">Ordenar Tarefas por Importância</button>
     <table id="tabela-de-tarefas">
-      <thead>
+      <thead id="area-nome-colunas">
         <tr>
           <th>Nome da Tarefa</th>
           <th>Descrição</th>
@@ -39,19 +38,10 @@
           <th>Departamento</th>
           <th>Importância</th>
           <th>Valor</th>
+          <th>Duração</th>
         </tr>
       </thead>
       <tbody id="area-tarefas">
-        <!-- 
-        <tr class="tarefa">
-          <td class="nome">--</td>
-          <td class="descricao">--</td>
-          <td class="autor">--</td>
-          <td class="departamento">--</td>
-          <td class="importancia">--</td>
-          <td class="valor">--</td>
-        -->
-        </tr>
       </tbody>
     </table>
 </body>
