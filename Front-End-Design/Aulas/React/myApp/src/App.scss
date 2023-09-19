@@ -1,0 +1,15 @@
+main {
+    height: 65vh;
+    background-color: lightyellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    border: 1px solid black;
+    width: 50%;
+    height: 50%;
+    margin: 20px;
+    background-color: aqua;
+}
