@@ -4,15 +4,7 @@ import csv
 
 escolha = input("Escolha uma das opções abaixo para perquisar seu filme:\n-Título\n-Diretor\n-Gênero\n\n-> ")
 info_escolha = ""
-match escolha.lower():
-    case "título":
-        info_escolha = input(f"Digite o título do filme que você procura: ")
-    case "diretor":
-        info_escolha = input(f"Digite o nome do diretor do filme que você procura: ")
-    case "gênero":
-        info_escolha = input(f"Digite o gênero do filme que você procura: ")
-    case _:
-        print("Opção inválida.")
+info_escolha = input("-> ")
 
 with open('filmes.csv', 'r', encoding='utf-8') as arquivo:
     filmes = csv.reader(arquivo)
