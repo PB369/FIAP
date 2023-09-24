@@ -1,3 +1,5 @@
+
+
 import random
 import csv
 
@@ -114,7 +116,7 @@ while vitoria == False:
             if escolha_adivinha.lower() == "s":
                 lista_adivinha_palavras = []
                 indice = 1
-                # Recebendo os palpites do jogador:
+                # Recebendo os palpites de palavras do jogador:
                 for palavra in lista_palavras:
                     palpite = input(f"{indice}° palavra: ")
                     indice += 1
