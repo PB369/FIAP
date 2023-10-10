@@ -1,0 +1,35 @@
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 32%);
+  grid-template-rows: 50px 1fr 1fr;
+  gap: 10px;
+  padding: 0 20px;
+}
+main h3 {
+  grid-column: 1/4;
+  text-align: center;
+  margin: auto 0;
+  font-size: 1.5em;
+}
+main .pizzas {
+  border-radius: 8px;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+main .pizzas img {
+  width: 75%;
+}
+main .pizzas #info-pizza {
+  max-width: 90%;
+}
+main .pizzas p {
+  margin: 5px 0;
+  align-self: flex-start;
+}
+main .pizzas span {
+  font-weight: bold;
+}/*# sourceMappingURL=main.css.map */
