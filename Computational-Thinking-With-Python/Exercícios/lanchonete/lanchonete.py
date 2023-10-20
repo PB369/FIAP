@@ -1,18 +1,27 @@
+# RM97937 - Pedro Henrique Fernandes Lô de Barros
+
 from tkinter.ttk import *
 from tkinter import *
 
 def fazerPedido():
     novaImagemLanche = "cardapio/" + lanche.get() + ".png"
     imagemLanche["file"] = novaImagemLanche
-    rotuloPrecoValor["text"] = precosLanche[float(lanche.get())] + precosPorcao[float(porcao.get())] + precosBebida[float(bebida.get())]
 
     novaImagemPorcao = "cardapio/" + porcao.get() + ".png"
     imagemPorcao["file"] = novaImagemPorcao
 
-
     novaImagemBebida = "cardapio/" + bebida.get() + ".png"
     imagemBebida["file"] = novaImagemBebida
 
+    rotuloPreco["text"] = "Total: R$"
+
+    pedidoLanche = precosLanche[lanche.get()]
+    pedidoPorcao = precosPorcao[porcao.get()]
+    pedidoBebida = precosBebida[bebida.get()]
+    total = pedidoLanche + pedidoPorcao + pedidoBebida
+
+
+    rotuloPreco["text"] += f"{total:.2f}"
 
 fonte = ("Arial", "16")
 
@@ -27,8 +36,8 @@ containerOpcoes = Frame(window)
 containerOpcoes.pack()
 
 precosLanche = {
-    "escolha": 0,
-    "burguer": 34.9,
+    "escolha": 0.0,
+    "burger": 34.9,
     "noodles": 44.5,
     "pizza": 49
 }
@@ -41,7 +50,7 @@ lanche.current(0)
 lanche.pack()
 
 precosPorcao = {
-    "escolha": 0,
+    "escolha": 0.0,
     "fritas": 14.9,
     "nuggets": 9.5,
     "mlho": 12.3
@@ -55,7 +64,7 @@ porcao.current(0)
 porcao.pack()
 
 precosBebida = {
-    "escolha": 0,
+    "escolha": 0.0,
     "suco": 14.9,
     "shake": 19.9,
 }
@@ -87,9 +96,6 @@ botao["command"] = fazerPedido
 botao.pack()
 
 rotuloPreco = Label(window, text="Total: R$", font=fonte, pady=10)
-rotuloPreco.pack(side=LEFT)
-
-rotuloPrecoValor = Label(window, text="", font=fonte, pady=10)
-rotuloPrecoValor.pack(side=RIGHT)
+rotuloPreco.pack()
 
 window.mainloop()
