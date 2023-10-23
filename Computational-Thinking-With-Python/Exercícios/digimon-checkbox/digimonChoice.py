@@ -1,42 +1,44 @@
+# RM97937 - Pedro Henrique Fernandes Lô de Barros
+
 from tkinter import *
 
 def alterarImagem():
-    if ballistamon.get():
-        rotuloImagens["image"] = imagemBallistamon
-
-    if dorulumon.get():
-        rotuloImagens["image"] = imagemDorulumon
-
-    if shoutmon.get():
-        rotuloImagens["image"] = imagemShoutmon
-
-    if ballistamon.get() and shoutmon.get():
-        rotuloImagens["image"] = imagemShoutmonX2
-
-    if shoutmon.get() and dorulumon.get():
-        rotuloImagens["image"] = imagemShoutmonX3
-
-    if ballistamon.get() and dorulumon.get():
-        rotuloImagens["image"] = imagemShoutmonX4
-
     if ballistamon.get() and shoutmon.get() and dorulumon.get():
         rotuloImagens["image"] = imagemShoutmonX5
+    
+    elif ballistamon.get() and dorulumon.get():
+        rotuloImagens["image"] = imagemShoutmonX4
+
+    elif ballistamon.get() and shoutmon.get():
+        rotuloImagens["image"] = imagemShoutmonX2
+    
+    elif shoutmon.get() and dorulumon.get():
+        rotuloImagens["image"] = imagemShoutmonX3
+    
+    elif ballistamon.get():
+        rotuloImagens["image"] = imagemBallistamon
+
+    elif dorulumon.get():
+        rotuloImagens["image"] = imagemDorulumon
+
+    elif shoutmon.get():
+        rotuloImagens["image"] = imagemShoutmon
 
     else:
         rotuloImagens["image"] = imagemDesconhecido
 
-fonte = ("Arial", "12")
+fonte = ("Arial", "12", "bold")
 
 window = Tk()
 window.title("O Programa Fusão")
-window.geometry("400x200")
+window.geometry("600x400")
 
 ballistamon = BooleanVar()
 dorulumon = BooleanVar()
 shoutmon = BooleanVar()
 
 container1 = Frame(window)
-container2 = Frame(window)
+container2 = Frame(window, pady=35)
 container1.pack(side=LEFT)
 container2.pack(side=TOP)
 
@@ -53,11 +55,11 @@ rotuloImagens = Label(container2)
 rotuloImagens["image"] = imagemDesconhecido
 rotuloImagens.grid(row=0, column=1)
 
-checkBallistamon = Checkbutton(container1, text="ballistamon", font=fonte, variable=ballistamon, width=15, padx=10, pady=5, anchor="w", command=alterarImagem)
+checkBallistamon = Checkbutton(container1, text="Ballistamon", font=fonte, variable=ballistamon, width=15, padx=10, pady=5, anchor="w", command=alterarImagem)
 
-checkDorulumon = Checkbutton(container1, text="dorulumon", font=fonte, variable=dorulumon, width=15, padx=10, pady=5, anchor="w", command=alterarImagem)
+checkDorulumon = Checkbutton(container1, text="Dorulumon", font=fonte, variable=dorulumon, width=15, padx=10, pady=5, anchor="w", command=alterarImagem)
 
-checkShoutmon = Checkbutton(container1, text="shoutmon", font=fonte, variable=shoutmon, width=15, padx=10, pady=5, anchor="w", command=alterarImagem)
+checkShoutmon = Checkbutton(container1, text="Shoutmon", font=fonte, variable=shoutmon, width=15, padx=10, pady=5, anchor="w", command=alterarImagem)
 
 
 checkBallistamon.grid(row=0, column=0)
