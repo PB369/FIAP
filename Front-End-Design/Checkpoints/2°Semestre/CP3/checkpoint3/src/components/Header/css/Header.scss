@@ -5,3 +5,38 @@
 .account:hover {
     fill: #FFDC2D;
 }
+
+.exclamacao {
+    position: relative;
+    top: -45px;
+    left: 23px;
+}
+
+.navDiv {
+    height: 48px;
+}
+#modalContainer {
+
+    .modal-content {
+        border: 2px solid white;
+        #modalHeader {
+            background-color: #3E3E3E;
+            #modalTitle {color: white;}
+            .btn-close {background-color: white;}
+        }
+        #modalBody {
+            color: white;
+            background-color: #3E3E3E;
+        }
+        #modalFooter {
+            background-color: #3E3E3E;
+            #modalButton {
+                background-color: #FFDC2D;
+                color: black;
+                border: none;
+                padding: 5px 25px;
+            }
+        }
+    }
+
+}
