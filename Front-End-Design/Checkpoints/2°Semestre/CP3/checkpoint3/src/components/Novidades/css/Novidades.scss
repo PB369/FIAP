@@ -1,0 +1,30 @@
+section {
+  .carouselDiv {
+
+    .item {
+      div {
+        background-color: #202020;
+        p {
+          color: white;
+        }
+        button {
+          background-color: #FFDC2D;
+          color: black;
+          border: none;
+          padding: 5px 15px;
+          font-weight: bold;
+          border-radius: 4px;
+          transition: 0.15s;
+        }
+        button:active {
+          background-color: #e6c525;
+        }
+      }
+
+    }
+    @media screen and (max-width: 500px) {
+      .carousel-control-prev {display: none;}
+      .carousel-control-next {display: none;}
+    }
+  }
+}

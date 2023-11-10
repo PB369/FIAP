@@ -1,9 +1,17 @@
+.navBar {
+    background-color: #202020;
+    border-bottom: 1px solid white;
+}
+
 .nav-link:hover{
     color: #FFDC2D !important;
 } 
+.nav-link:active {
+    color: #e6c525;
+}
 
 .account:hover {
-    fill: #FFDC2D;
+    transform: scale(0.96);
 }
 
 .exclamacao {
@@ -12,9 +20,28 @@
     left: 23px;
 }
 
-.navDiv {
-    height: 48px;
+.notifications:hover {
+    transform: scale(0.97);
 }
+
+.navDiv {
+
+    @media screen and (max-width: 991px) {
+        height: auto;
+        .account {display: none;}
+        .notifications {display: none;}
+        .account-text {display: block;}
+        .notifications-text {display: block;}
+    }
+    @media screen and (min-width: 991px) {
+        height: 48px;
+        .account {display: block;}
+        .notifications {display: block;}
+        .account-text {display: none;}
+        .notifications-text {display: none;}
+    }
+}
+
 #modalContainer {
 
     .modal-content {

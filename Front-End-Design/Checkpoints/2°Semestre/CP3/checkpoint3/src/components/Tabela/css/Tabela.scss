@@ -1,0 +1,13 @@
+.table {
+  thead tr th{
+    background-color: #FFDC2D;
+  }
+  tbody tr td {
+    background-color: #202020;
+    color: white;
+  }
+  .product:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
